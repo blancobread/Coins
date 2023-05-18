@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/custom-theme.scss",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -62,6 +63,9 @@
             "production": {
               "browserTarget": "hello-world:build:production"
             },
+            "options": {
+            "proxyConfig": "src/proxy.conf.json"
+        },
             "development": {
               "browserTarget": "hello-world:build:development"
             }
@@ -87,7 +91,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/deeppurple-amber.scss",
+              "src/styles.scss"
             ],
             "scripts": []
           }
